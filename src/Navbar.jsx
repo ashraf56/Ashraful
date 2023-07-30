@@ -43,7 +43,7 @@ useEffect(() => {
       </li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">ASHRAFUL</a>
+    <a className="btn btn-ghost normal-case text-xl"> <img src="../src/assets/phone_7048300.png" className='w-10' /> ASHRAFUL</a>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
