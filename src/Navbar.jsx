@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import img from '../src/assets/phone_7048300.png'
 const Navbar = () => {
   const [themes, setTheme] = useState(
     localStorage.getItem("Theme") ? localStorage.getItem("Theme") : "light"
@@ -43,7 +43,7 @@ useEffect(() => {
       </li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"> <img src="../src/assets/phone_7048300.png" className='w-10' /> ASHRAFUL</a>
+    <a className="btn btn-ghost normal-case text-xl"> <img src={img} className='w-10' /> ASHRAFUL</a>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
