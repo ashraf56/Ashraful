@@ -3,10 +3,10 @@ import './Project.css'
 import CountUp from 'react-countup';
 
 const Project = () => {
-    
+    let ur='data.json'
    let [p,setP]=useState([])
 useEffect(()=>{
-fetch('data.json')
+fetch(ur)
 .then(res=> res.json())
 .then(data=> 
   {  
@@ -42,7 +42,6 @@ const openModal = (project) => {
       end={p.length}
      duration={7}></CountUp>
       </div>
-    <div className="stat-desc">More projects are coming soon!</div>
   </div>
   
 </div>  
@@ -52,7 +51,7 @@ const openModal = (project) => {
 
   {
     p.map(proj=>
-        <div className="card w-full md:w-96 bg-base-100 shadow-xl" key={proj.id}>
+        <div className="card w-full max-w-full md:max-w-md bg-base-100 shadow-xl" key={proj.id}>
         <figure ><img src={proj.image} alt="Shoes" className='w-full h-[200px] object-top object-cover hover:object-bottom duration-[2s]' /> </figure>
         <div className="card-body">
           <h2 className="card-title">
@@ -71,7 +70,7 @@ View Details
       </div>
         )
   }
-  {selectedProject && (<dialog id="my_modal_1" className="modal">
+  {selectedProject ?  (<dialog id="my_modal_1" className="modal">
   <form method="dialog" className="modal-box">
     <h3 className="font-bold text-lg">{selectedProject.name}</h3>
     <p className="py-4">
@@ -86,11 +85,25 @@ View Details
         <li>{selectedProject.features[3]}</li>
         <li>{selectedProject.features[4]}</li>
     </ul>
+    <p className='pt-2 font-bold'>Github Code link</p>
+    <a href={selectedProject.code}> {selectedProject.code}</a>
     <div className="modal-action">
       <button className="btn">Close</button>
     </div>
   </form>
-</dialog>)}
+</dialog>): (<dialog id="my_modal_1" className="modal">
+  <form method="dialog" className="modal-box">
+  <div>
+  <span className="loading loading-ring loading-lg"></span>
+
+  </div>
+
+    <div className="modal-action">
+      <button className="btn">Close</button>
+    </div>
+  </form>
+</dialog>)
+}
     </div>
     </div>
   );

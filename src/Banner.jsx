@@ -5,8 +5,8 @@ const Banner = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/resume_of_Ashraful.pdf'; 
-        link.download = 'resume_of_Ashraful.pdf'; 
+        link.href = '/WebDeveloper_Resume_of_Ashraful_islam.pdf'; 
+        link.download = 'WebDeveloper_Resume_of_Ashraful_islam.pdf'; 
         link.click();
       };
 
@@ -23,10 +23,13 @@ const Banner = () => {
   sequence={[
     'Ashraful islam ',
     1000,
+    ' Web Developer',
+    1000,
     'A MERN Stack Developer',
     1000,
     'A Front End Developer',
     1000,
+    
  
   ]}
   speed={50}
