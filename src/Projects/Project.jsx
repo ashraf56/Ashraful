@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Project.css'
 import CountUp from 'react-countup';
 
 const Project = () => {
