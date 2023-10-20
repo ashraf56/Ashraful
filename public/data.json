@@ -50,7 +50,7 @@
         "id": 4,
         "name": "Spice-Society",
         "description": "Spice Society is a web application that allows users to discover chefs from Bangladesh. Spice Society: Empowered users to explore and connect with top-notch Bangladeshi chefs, revolutionizing the culinary experience.With Spice Society, you can browse a vast collection of chefs-recipes, ingredients, save your favorite recipes",
-        "code":"https://github.com/ashraf56/Spice_Society",
+        "code":"https://github.com/ashraf56/Spice-Society",
         "image": "https://i.ibb.co/pzQGfHk/chef-hunter-bfc80-web-app-1.png",
         "features": [
           "MOngoDB",
