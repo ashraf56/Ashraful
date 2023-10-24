@@ -32,9 +32,9 @@
       },
       {
         "id": 3,
-        "name": "speedy-wheels",
+        "name": "Speedy-wheels",
         "description": "Speedy Wheely Toy Marketplace is an online platform where users can buy and sell toys. This project aims to provide a convenient and user-friendly interface for toy enthusiasts to explore, trade, and connect with each other.",
-        "code":"https://github.com/ashraf56/Speedy_wheels",
+        "code":"https://github.com/ashraf56/Speedy-Wheels",
         "image": "https://i.ibb.co/0Xs5C96/speedy-wheels-1bd1c-web-app.png",
         "features": [
           "MOngoDB",
