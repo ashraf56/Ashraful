@@ -23,13 +23,14 @@ const Banner = () => {
   sequence={[
     'Ashraful islam ',
     1000,
-    ' Web Developer',
-    1000,
-    'A MERN Stack Developer',
+    'A Web Developer',
     1000,
     'A Front End Developer',
     1000,
-    
+    'A React Developer',
+    1000,
+    'A MERN Stack Developer',
+ 1000
  
   ]}
   speed={50}
@@ -42,7 +43,7 @@ const Banner = () => {
       <p className="py-6   text-center">Welcome to my  portfolio! I'm a passionate and dedicated developer in front-end web development with a strong background in html css  and cssframeworks.I have  good  understanding in MERN stack .  </p>
       <div className=' text-center'>
         
-      <button className="btn btn-warning  " onClick={handleDownload}>Get Resume </button>
+      <button className="btn btn-warning  " ><a href="https://drive.google.com/file/d/1dma6NYxvQhX3MHhZs1GxmK_xZiNBnZ1h/view?usp=sharing">Get Resume</a>   </button>
       </div>
     </div>
   </div>
