@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
-import { Link } from 'react-router-dom';
 
-const Project = () => {
+const AllProject = () => {
   let ur = 'data.json'
   let [p, setP] = useState([])
   useEffect(() => {
@@ -29,20 +28,28 @@ const Project = () => {
 
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto mb-10'>
       <div className='text-center mb-12'>
-        <h1 className='uppercase font-extrabold text-center text-5xl py-10'>
-           Projects 
+        <h1 className='uppercase font-extrabold text-center text-5xl py-10'>All Project</h1>
+        <div className="stats shadow ">
 
-           </h1>
-        
+          <div className="stat">
+            <div className="stat-title">Current Projects</div>
+            <div className="stat-value">
+              <CountUp
+                end={p.length}
+                duration={7}></CountUp>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div className='grid md:grid-cols-2  lg:grid-cols-3 gap-2 mt-5  gap-y-4 '>
 
         {
-          p.slice(0,3).map(proj =>
-            <div className="card w-full max-w-full md:max-w-md bg-base-100 shadow-xl " key={proj.id}>
+          p.map(proj =>
+            <div className="card w-full max-w-full md:max-w-md bg-base-100 shadow-xl" key={proj.id}>
               <figure ><img src={proj.image} alt="Shoes" className='w-full h-[200px] object-top object-cover hover:object-bottom duration-[2s]' /> </figure>
               <div className="card-body">
                 <h2 className="card-title">
@@ -61,7 +68,6 @@ const Project = () => {
             </div>
           )
         }
-        
         {selectedProject ? (<dialog id="my_modal_1" className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{selectedProject.name}</h3>
@@ -97,14 +103,9 @@ const Project = () => {
         </dialog>)
         }
       </div>
-      <div className='text-center justify-center mt-5 '>
-          <button className='btn btn-warning btn-wide font-bold'>
-            <Link to={'/project'}>See All</Link>
-          </button>
-        </div>
     </div>
   );
 
 };
 
-export default Project;
+export default AllProject;

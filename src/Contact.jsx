@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="mt-10  bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <div className='w-3/4 h-full'>
 
@@ -13,6 +13,7 @@ const Contact = () => {
             <div className="card flex-shrink-0 w-full h-full  lg:max-w-sm shadow-2xl bg-base-100">
 
               <form className="card-body">
+              <h1 className='uppercase font-bold text-center'>COntact now</h1>
 
                 <div className="form-control">
 
