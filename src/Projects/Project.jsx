@@ -32,16 +32,16 @@ const Project = () => {
     <div className='container mx-auto'>
       <div className='text-center mb-12'>
         <h1 className='uppercase font-extrabold text-center text-5xl py-10'>
-           Projects 
+          Projects
 
-           </h1>
-        
+        </h1>
+
       </div>
 
       <div className='grid md:grid-cols-2  lg:grid-cols-3 gap-2 mt-5  gap-y-4 '>
 
         {
-          p.slice(0,3).map(proj =>
+          p.slice(0, 3).map(proj =>
             <div className="card w-full max-w-full md:max-w-md bg-base-100 shadow-xl " key={proj.id}>
               <figure ><img src={proj.image} alt="Shoes" className='w-full h-[200px] object-top object-cover hover:object-bottom duration-[2s]' /> </figure>
               <div className="card-body">
@@ -61,7 +61,7 @@ const Project = () => {
             </div>
           )
         }
-        
+
         {selectedProject ? (<dialog id="my_modal_1" className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{selectedProject.name}</h3>
@@ -98,10 +98,10 @@ const Project = () => {
         }
       </div>
       <div className='text-center justify-center mt-5 '>
-          <button className='btn btn-warning btn-wide font-bold'>
-            <Link to={'/project'}>See All</Link>
-          </button>
-        </div>
+        <button className='btn btn-warning btn-wide font-bold'>
+          <Link to={'/project'}>See All</Link>
+        </button>
+      </div>
     </div>
   );
 
