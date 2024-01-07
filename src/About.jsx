@@ -7,7 +7,7 @@ const About = () => {
     <div>
 
 
-      <h1 className='uppercase font-extrabold text-center  text-5xl pt-3 pb-14 '>About Me</h1>
+      <h1 className='uppercase font-extrabold text-center  text-5xl pt-10 pb-14 '>About Me</h1>
       <div className="hero ">
 
         <div className="hero-content flex-col lg:flex-row-reverse ">
