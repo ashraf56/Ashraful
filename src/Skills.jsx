@@ -46,7 +46,7 @@ const Skills = () => {
   return (
     <div className='my-10 mx-auto'>
       <div className='container mx-auto'>
-        <h1 className='text-center font-bold uppercase py-10 text-base md:text-5xl'>All skills and Tools</h1>
+        <h1 className='text-center font-extrabold  uppercase py-10 text-base md:text-5xl'> skills and Tools</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 mx-auto justify-center px-6'>
           {data.map(d => (
             <div>

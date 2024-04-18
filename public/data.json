@@ -138,6 +138,21 @@
     },
     {
       "id": 10,
+      "name": "Chatgpt-clone",
+      "description": "Only chat option is Functional here. Other sections are static for now.",
+      "code": "https://github.com/ashraf56/Chatgpt-clone",
+      "image": "https://i.ibb.co/fD8qhrq/Screenshot-4.png",
+      "features": [
+        "React JS",
+        "JavaScript",
+        "NextJS",
+        "Tailwind CSS",
+        "DaisyUI"
+      ],
+      "livelink": "https://chatgpt-clone-ashraf56.vercel.app/"
+    },
+    {
+      "id": 11,
       "name": "AI Universe",
       "description": "This website Shows all populer  AI in details.  ",
       "code": "https://github.com/ashraf56/AI-universe",
