@@ -18,6 +18,7 @@ import C from './assets/c.svg'
 import no from './assets/node.svg'
 import v from '../public/vite.svg';
 import ne from './assets/next.svg';
+import ts from './assets/typescript.png'
 
 const data = [
   { value: "Html", count: `${ht}` },
@@ -38,6 +39,7 @@ const data = [
   { value: "Git", count: `${git}` },
   { value: "VS code", count: `${vs}` },
   { value: "Postman", count: `${post}` },
+  { value: "Typescript", count: `${ts}` }
 ];
 
 
