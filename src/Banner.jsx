@@ -36,7 +36,7 @@ const Banner = () => {
             <p className="py-6   text-center">Welcome to my  portfolio! I'm a passionate and dedicated developer in front-end web development with a strong background in html css  and cssframeworks.I have  good  understanding in MERN stack .  </p>
             <div className=' text-center'>
 
-              <button className="btn btn-warning  " ><a className='animate-pulse' href="https://drive.google.com/file/d/1dma6NYxvQhX3MHhZs1GxmK_xZiNBnZ1h/view?usp=sharing">Get Resume</a>   </button>
+              <button className="btn btn-warning  " ><a className='animate-pulse' href="https://drive.google.com/file/d/1SAo8EtMgItmkzW2qOxqK5kl5BtoUI-kP/view?usp=sharing">Get Resume</a>   </button>
             </div>
           </div>
         </div>
